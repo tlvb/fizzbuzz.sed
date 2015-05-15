@@ -1,5 +1,5 @@
 #-; fizzbuzz in posix compliant sed
-:A; s/.*/(0,0)/;
+:A; s/.*/(1,1)/;                     tB
 :B; s/,15)/,0)/;h;
 :C; s/,1*[05])/&buzz/;
 :D; s/,\([0369]\)*\(12\)*)/&fizz/;   tF;
@@ -21,6 +21,7 @@
 # 0, 3, 5, 6, 9, 10 and 12
 #
 #A: initialize two counters in pattern space
+#   and reset the t flag
 #B: reset the right counter to 0 if it's 15
 #   and back up the counters to hold space
 #C: add 'buzz' to the right of the counters
