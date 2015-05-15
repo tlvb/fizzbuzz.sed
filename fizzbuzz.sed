@@ -1,5 +1,5 @@
 #-; fizzbuzz in posix compliant sed
-:A; s/.*/(1,1)/;                     tB
+:A; s/.*/(1,1)/;                     tB;
 :B; s/,15)/,0)/;h;
 :C; s/,1*[05])/&buzz/;
 :D; s/,\([0369]\)*\(12\)*)/&fizz/;   tF;
