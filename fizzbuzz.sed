@@ -10,7 +10,7 @@
 :I; s/4_/5/g;s/5_/6/g;s/6_/7/g;s/7_/8/g;
 :J; s/8_/9/g;s/9_/_0/g;              tH;
 :K; s/_/1/g;                         bB;
-#-; echo | sed -f fizzbuzz.sed
+#-; echo | sed -f fizzbuzz.sed | head -n 100
 #
 # idea of operation:
 # have two counters, one ever-increasing,
